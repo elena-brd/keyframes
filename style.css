@@ -1,0 +1,52 @@
+body {
+    background: #fff;
+}
+
+
+.box {
+    width: 200px;
+    height: 200px;
+    background: #b8d0eb;
+    animation-name: animate;
+    animation-duration: 6s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    position: relative;
+}
+
+@keyframes animate {
+    0% {
+        background: #b8d0eb;
+        border-radius: 0 0 0 0;
+        top: 0;
+        left: 0;
+    }
+
+    25% {
+        background: #b298dc;
+        border-radius: 50% 0 0 0;
+        top: 0;
+        left: 400px;
+    }
+
+    50% {
+        background: #a663cc;
+        border-radius: 50% 50% 0 0;
+        top: 400px;
+        left: 400px;
+    }
+
+    75% {
+        background: #6f2dbd;
+        border-radius: 50% 50% 50% 0;
+        top: 400px;
+        left: 0;
+    }
+
+    100% {
+        background: #b8d0eb;
+        border-radius: 50%;
+        top: 0;
+        left: 0;
+    }
+}
